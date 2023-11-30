@@ -1,0 +1,3 @@
+client side and browser side = create the html file and link the js file to the html file  
+
+linking js file must be present in the last of the within the body tag because we cannot able to target the html tags if we link the js at starting body 
