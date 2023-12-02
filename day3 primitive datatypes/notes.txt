@@ -1,0 +1,10 @@
+null datatype : it is used to de refer the object 
+
+Datatype of the null is = object 
+
+Undefined =  means we have not initialize the variable with the data then we will get undefined 
+            datatype of the undefined is undefined means nothing is present in that variable 
+
+not defined = is the error (we can not do the Arithmatic operations betwenn the number and string then it will return NaN s)
+            type of NaN is Number
+
