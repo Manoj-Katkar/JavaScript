@@ -2,7 +2,7 @@ Type casting
 implicit typecasting or type coercion 
 explicit typecasting 
 
-String in javascript is also get concatinated between the two Stsring
+String in javascript is also get concatinated between the two String
 
 + = it will convert the number into the String
 for all other String will get converted in the num 
