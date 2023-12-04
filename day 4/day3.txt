@@ -1,0 +1,27 @@
+Type casting 
+implicit typecasting or type coercion 
+explicit typecasting 
+
+String in javascript is also get concatinated between the two Stsring
+
++ = it will convert the number into the String
+for all other String will get converted in the num 
+
+datatype of the bigint is bigint only 
+
+parseInt metod is used to convert the String into the number datatype it is similar to java 
+
+if we are using the more than one type of operator it will always return string 
+
+Syntax of the function 
+
+Function function_name(parameters){
+
+    //javascript code or logic 
+
+}
+
+How to call the function in javascript
+function_name();
+
+parameter means which holds some data 
