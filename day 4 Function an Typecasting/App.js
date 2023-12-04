@@ -29,13 +29,6 @@ console.log(num1 == num2);  //~here it will check only data not a datatype
 
 
 
-
-
-
-
-
-
-
 // ~Explicit Type casting 
 
 // let age = parseInt(prompt("Enter your age"));
@@ -119,42 +112,38 @@ console.log(typeof ans3);
 
 
 
-// function demo(){
-//     console.log("hello world 1");
-//     console.log("hello world 2");
-//     console.log("hello world 3");
-//     console.log("hello world 4");
-//     console.log("hello world 5");
-//     console.log("hello world 6");
-//     console.log("hello world 7");
-// }
+function demo(){
+    console.log("hello world 1");
+    console.log("hello world 2");
+    console.log("hello world 3");
+    console.log("hello world 4");
+    console.log("hello world 5");
+    console.log("hello world 6");
+    console.log("hello world 7");
+}
 
+demo();
 // demo();
-// demo();
 
-// function add(a , b){
-//     if(a > b){
-//         console.log(a - b);
-//     }
-//     else{
-//         console.log(b - a);
-//     }
-
-//     console.log(a);
-//     console.log(b);
-// }
-
-// add(100 , 200);
+function add(a , b){
+    if(a > b){
+        console.log(a - b);
+    }
+    else{
+        console.log(b - a);
+    }
 
 
+    console.log(a);
+    console.log(b);
+}
 
-
-// function fun(x = 100 , y = 10000){
-//     console.log(x , y);
-// }
-
-// fun("str");
+add(100 , 200);
 
 
 
+function fun(x = 100, y = 10000) {
+    console.log(x, y);
+}
 
+fun("str"); // It will update only the first parameter value
