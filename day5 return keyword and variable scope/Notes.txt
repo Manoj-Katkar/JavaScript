@@ -1,0 +1,23 @@
+Scopes in javascript
+1)Global Scope
+2) Script Scope 
+3)local Scope
+4)block Scope
+
+How to run the debagar
+inspect 
+souce 
+source code 
+click on the line from where you want to run the debugger 
+and then refresh the page 
+
+insid ethe function alwys stored inside the local scope 
+
+/================================/
+
+return :
+1)it is the one keyword
+2)it is used to return the maximum one data 
+3)by default for each function return keyword will be always present and it will not return anything then it will return undefined
+4)if we will return the more than one value then it will take the last return value 
+example : return 10,20,30;   //here it will return the last value that is 30 because it will override the other values 
