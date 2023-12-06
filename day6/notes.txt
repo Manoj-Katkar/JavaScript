@@ -1,0 +1,98 @@
+Types of the functions 
+1) Ananymous function : 
+        function with no function name is known is Ananymous function 
+        we could not able do declare or define the Ananymous function alone 
+        and we could not able to call this function also 
+    
+    example : (Syntax)
+       function(){
+        //code 
+       }
+
+
+2)NamedFunction : means function with function name 
+                 we can call this function with function name 
+
+    example : (Syntax)
+       function functionName(){
+        //code 
+       }
+
+       how to call this function // using function name 
+
+
+
+3)Function with Expression : passing the function to the any variable is known as the function with expression 
+                            or passing the function as the value to  the one varaible is known as FWE
+    
+    //How to call the above function
+    using the variableName();
+
+    
+    example : (Syntax)
+       let Ans  = function(){  //
+                    //code 
+                  }
+
+
+    calling the function with Expression
+    Ans();
+
+                    //==============================================//
+
+4)Arrow Function:   here we declare the function without using the function keyword
+
+    //How to call the above function
+    using the variableName();
+
+
+    example : (Syntax)
+       let ar  = (here pass the parameters ) =>{
+                    //code
+                  }
+
+    calling the function with Expression
+    ar();
+
+    example 2 : (Syntax)  (without using the curlly brackets)
+    (when I will have the only one line then only use this arrow function where the )
+
+       let add  = (d , e) =>console.log(d + e);   //this is one function 
+
+       add(20 , 30);
+
+       output = 50;
+
+
+    example 2 : (Syntax)  (without using the parameter in the round bracket )
+    (when I will have the only one line then only use this arrow function where the )
+
+       let check  = num =>num>100;   //this is one function 
+
+       check(3000);
+
+       output = true;
+
+
+5)HOF : Higher order Function
+then function which takes the function as an argument is known as HOF
+
+6)call back function 
+            the function that we are passing as the parameter is known as the call back function
+
+
+7)IIFE (Immediate invoke function expression)            
+            after defining the function it is immediate  to call the function 
+            we can able to call the function only one time 
+
+            Advantage of using IIFE
+            1)to avoid the global pollution (means to save the memory space)
+            2)once it will get executed it will automatic get removed from the call stack 
+
+        Syntax:
+        (define any one type of the Function)(Function call);
+
+
+Global : create variables with var keyword
+Const = if the value is not going to change then declare it using the const 
+otherwise create the variables with the let keyword 
