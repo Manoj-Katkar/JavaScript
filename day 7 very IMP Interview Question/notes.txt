@@ -1,0 +1,132 @@
+JS Engine 
+    is the execution unit of browser 
+    and it is resposible for the code execution only at the browser side 
+    each and every browser have differnt JS Engine 
+    
+    example : 
+
+    Browser            Js Engine
+    chrome               V8
+    FireFox              SpiderMonkey
+    Safari               JS core
+    MS Edge              Chakra
+
+
+
+    parser = check for the syntax mistake it will return abstract syntax tree is AST 
+    AST = it is just the result of the parser  
+    interprter : it will check the code line by line 
+    JIT = just intime compiler 
+    Byte code : it will understand by the Machine only 
+    then code execution will done 
+
+
+
+
+Window : 
+     it is the supermost object in javascript 
+     it refers to the browser window 
+     it will have differnt method and properties 
+     if we declare the variable using the var then it will also get store in the Window object 
+
+    (IMP) if we want to acess any properties then  we can access with window as prefix  or we can use directlly also only for the window object 
+     example = window.alert();
+
+
+Note : all the methods are the childs of the window  object (prompt() , document() , etc )
+
+//...........................................//
+
+this Keyword: 
+    if you declare it globally then it will refer to the Window Object 
+    so we can access the global scope varaible in the local scope using 
+    Syntax : 
+            this.globalVariableName
+ 
+//.........................................................//
+
+
+GEC : (Global Execution Context  we have two phase )
+when we create the javascript code then GEC will get created 
+            phase 1 = varaible declaration or function declaration phase
+
+            phase 2 = It will initialize the value to the variables  and also checks the function call
+
+            then for the each function calling statement it will create the Function Execution Context and it will also have the 2 phase as similar to the GEC  
+
+call stack : it will give the info about the which function running now  or to track the which functions are getting executed 
+
+
+
+
+
+
+
+//..........................//
+
+Nested Function : function inside the function
+
+
+
+
+
+
+
+
+//...........................//
+
+Closure(very very IMP Question )
+    it is the scope or the memory allocation which gets created when you access the outer function variable inside the inner function
+
+  or whenever we will try to access the outer function variables inside the inner function then the closure will get created for the outer function 
+
+
+
+//.......................................//
+
+
+Lexical Scoping : 
+
+
+variable hosting 
+  moving variable declaration to the top is known as varaible hosting
+  before the code get execute it will first get load 
+  means the taking the varaible declaration to the top 
+
+Note : it will return undefined for the only var variable but for let and const it will throw the error (Uncath referance error)
+        because of the (Temporal Dead Zone )   very IMP
+        1)means for script scope the value will be unavailable  so you will get error here 
+        2)and for the global scope and local scope  varables will be always undefined 
+
+
+
+//................................................//
+
+function hosting
+      means the taking the function declaration to the top 
+      it is only applicabled for the only named function
+      it is not compulsory to call the function after declaration you can call before declaration 
+
+
+//..............................................//
+
+
+
+Array : 
+     notes in phone in image format 
+
+
+
+
+
+
+
+
+
+
+
+Window
+This Keyword
+GEC , Closure 
+Lexical Scoping
+variable hosting , function hosting
