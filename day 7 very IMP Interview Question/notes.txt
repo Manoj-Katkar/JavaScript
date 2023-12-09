@@ -103,9 +103,9 @@ Note : it will return undefined for the only var variable but for let and const 
 //................................................//
 
 function hosting
-      means the taking the function declaration to the top 
+      means the taking the function declaration to the top
       it is only applicabled for the only named function
-      it is not compulsory to call the function after declaration you can call before declaration 
+      it is not compulsory to call the function after declaration you can call before declaration
 
 
 //..............................................//
@@ -114,6 +114,93 @@ function hosting
 
 Array : 
      notes in phone in image format 
+     array length is not fixed in javascript
+     after deleting  the element the length will remain same but index position will get deleted 
+     if we create the any array then parent will be the array object 
+     it is like inheritance we can access the properties and methods of an parent 
+
+differant way : 
+     1)literal way 
+     2)using array constructor (using the new and arrayConstructor(length of the Array))
+              IMP = here it will for 1 value it will treat the length of the Array and more than one value it will treat as the array elements 
+                  1)new arrayConstructor(length of the Array); or we can directlly pass the values 
+                  2)new arrayConstructor(Array elements directlly );
+                          example: var arr = new arrayConstructor(10,20,40,54,78,69,85);
+
+
+ 3)using Array.of(pass the array elements );
+              1)of is the one method 
+              2)directlly pass the array elements in Array.of();
+              3)it will treat only as the element of the Array 
+
+       example:
+              var x = Array.of( "Hello" , 20 , 1n , [10 , 50] );
+
+
+
+Note : most time we will use the literal way to create the Array element 
+
+
+
+//............All methods are the Non static meyhods call with the object referance ....................//
+
+
+
+Push() method In Array : 
+                it will return the length of the modified array 
+                it will add the elements at the last 
+                it will help to add the multiple elements 
+
+
+
+unshift() method 
+            it will add the array element at the beginning 
+            you can add the one or more elements like push method 
+            it will also return the length of the Array 
+
+pop() method : 
+            it will remove the end of the Array element 
+            we can only able remove the one element at the time
+            if the array is empty then it will give the error 
+            it will return the deleted array element
+
+
+shift() method : 
+            it will only remove the only one element 
+            it will remove the array element from the beginning 
+            and it will return the beginning deleted element 
+
+
+slice() method:
+        it will  extract the part of the array and return the new extracted elements in the form of the Array 
+        it will take the two arguments 
+        it will not modify the orignal Array 
+        it will return array hence we have to store that in the one variable then we can print that part of the Array 
+        if we are passing only one argument then fom that index it will return the all array elements in the form of the Array 
+        we can also pass the negative values as an argument then it will consider from the last index from the orignal Array .
+
+        example:
+              ar.slice(start-index , last-index - 1);   //it will not consider the last index value 
+
+
+splice() method : 
+            it will take three or more arguments
+            when we want to add the elements along with that delete the element then we can go with the splice method 
+            it will add the array elements at the position for which we have already want to delete the array element 
+            first two arguments are mandatory to mension 
+
+   Arguments :  arr.splice( start-index , delete-count-element , element-that-we-want-to-add);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

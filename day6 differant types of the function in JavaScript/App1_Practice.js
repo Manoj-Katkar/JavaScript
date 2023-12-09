@@ -33,3 +33,11 @@ function y(x){
 }
 
 y(x);
+
+
+//~ 7)IIFE (Immediate invoke function expression)   
+
+(function printName(){
+        console.log("Hi there I am Manoj Katkar Enjoying the learning the function ");
+        // now I have to call this function immediatelly 
+})();

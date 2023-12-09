@@ -65,5 +65,36 @@ console.log(arr[4][1]);
 // ~to check whether it is Array or not 
 // Array.isArray(array1);
 
+//~ first using the literal way 
+
+var brr = [10 , 20 , 30 , 40 , ()=>"arrow function" ,"string" , [10 , 20]];
+
+console.log(brr.length);
+console.log(brr[4]());
+console.log(brr);
+
+ar[4]= "string";
+console.log(brr);
+
+ar[6] = "last array element";
+
+// !using the array constructor
+
+let brr = new Array(5);  //this will be treated as the length
+
+let Brr = new Array(10 , 50 , 78 , 50); //it will treat as the Array elements 
+
+brr[0] = 40 ;
+brr[2] = 87;
 
 
+console.log(brr);
+
+
+// !using the Array.of();
+
+// ~it will only take the values as the Array element only 
+
+
+let x1 = Array.of(10 , 50 , 78 , 98);
+console.log(x1)
