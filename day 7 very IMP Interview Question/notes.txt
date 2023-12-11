@@ -112,8 +112,8 @@ function hosting
 
 
 
-Array : 
-     notes in phone in image format 
+Array :
+     notes in phone in image format
      array length is not fixed in javascript
      after deleting  the element the length will remain same but index position will get deleted 
      if we create the any array then parent will be the array object 
@@ -183,11 +183,12 @@ slice() method:
               ar.slice(start-index , last-index - 1);   //it will not consider the last index value 
 
 
-splice() method : 
+splice() method :
             it will take three or more arguments
-            when we want to add the elements along with that delete the element then we can go with the splice method 
-            it will add the array elements at the position for which we have already want to delete the array element 
-            first two arguments are mandatory to mension 
+            it will affect the orignal array it will make t he changes in  the same array
+            when we want to add the elements along with that delete the element then we can go with the splice method
+            it will add the array elements at the position for which we have already want to delete the array element
+            first two arguments are mandatory to mension
 
    Arguments :  arr.splice( start-index , delete-count-element , element-that-we-want-to-add);
 
@@ -195,25 +196,107 @@ splice() method :
 
 
 
+//...............for  loops  .............................//
+
+Note : in javascript we can able to itearate on the two data structure that is :
+                    String and Array
+
+for loop : it is same as the java
+
+
+find() method:
+          it is the higher order function 
+          it will take one function as an argument
+          the function that we are passing that will take the three parameters 
+          (array-value , array-index , orignal-array )   //that function will take this three parameters 
+          it is the array method
+          it will return the first statisfyed element
+          it will itearate over the array and return the first element  for the satisfied condition 
+          it is the non static method so call it with the help of the object referance 
+
+        Syntax : 
+                ArrayName.find((array-value , array-index , orignal-array ) => {
+                    console.log(array-value);
+                    return (condition ) //like array-value > 50;
+                })
+
+Note : if no array element satisfy the condition it will return the undefined 
+
+//...........................//
+
+
+findIndex() method:
+            it is same as the find method but it will return the array element index 
+            its return type is number 
+
+        Syntax : 
+                ArrayName.findIndex((array-value , array-index , orignal-array ) => {
+                    console.log(array-value);
+                    return (condition ) //like array-value > 50;  //it will return the index of that element 
+                })
+
+Note : if no array element satisfy the condition it will return the -1
+
+
+//...........................//
+
+filter() method:
+            it is also the higher order function 
+            it will always return the element of the array 
+            it will go and check for each and every Array element 
+            it will return one Array and in that array it will return all the satisfied element 
+            return type of the filter method is array 
+
+        Syntax : 
+                                  //used anaynomous function as the parameter
+                ArrayName.filter(function(array-value , array-index , orignal-array ) {
+                    console.log(array-value);
+                    return (condition ) //like array-value > 50;  //it will return the hole array elements for which the codition is true
+                })
+
+
+
+Note : if no array element satisfy the condition it will return the empty array 
+Note1: Very IMP it is not mandatory that we have to pass the all three parameters in the function 
+      filter and map method will not affect the orignal array it will return the new array 
 
 
 
 
+map()  method:
+          it is also the higher order function
+          if we want to perform the same opration for each and every array element then we use map() method
+          it will return one array 
+          it will perform the opearation and it will add the array elements in new array and return that array 
+
+        Syntax : 
+                                  //used arrow function as the parameter
+                ArrayName.map((array-value , array-index , orignal-array ) => {
+                    console.log(array-value);
+                    return (condition ) //like array-value + 50;  //it will return the hole array elements by adding 50 in it for each and every array elements 
+                })
+
+
+
+Note : if we want to perform the opearation for each and evey array element like addition , subtraction ,  division  , multiplication  it will do the opearation and add the new value in the new array and return  that new array 
 
 
 
 
+some() or every() 
+          both are the higher order function 
+          here also we have to pass the condition 
+          it will return the boolean 
+          both ar ethe non static 
+
+          some():
+                  it will return true if the any one element satisfied the codition else it will return false 
+                  once the condition is satisfy it will not check for thr further elements 
+
+          every():
+                   it will return true if the each and every element satisfied the codition else it will return false 
 
 
-
-
-
-
-
-
-
-Window
-This Keyword
-GEC , Closure 
-Lexical Scoping
-variable hosting , function hosting
+I have to go through 
+reduce() 
+reduceRight() method
