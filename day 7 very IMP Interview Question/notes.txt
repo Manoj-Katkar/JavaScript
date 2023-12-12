@@ -18,13 +18,13 @@ JS Engine
     interprter : it will check the code line by line 
     JIT = just intime compiler 
     Byte code : it will understand by the Machine only 
-    then code execution will done 
+    then code execution will done
 
 
 
 
 Window : 
-     it is the supermost object in javascript 
+     it is the supermost object in javascript
      it refers to the browser window 
      it will have differnt method and properties 
      if we declare the variable using the var then it will also get store in the Window object 
@@ -205,7 +205,7 @@ for loop : it is same as the java
 
 
 find() method:
-          it is the higher order function 
+          it is the higher order function
           it will take one function as an argument
           the function that we are passing that will take the three parameters 
           (array-value , array-index , orignal-array )   //that function will take this three parameters 
@@ -232,10 +232,10 @@ findIndex() method:
         Syntax : 
                 ArrayName.findIndex((array-value , array-index , orignal-array ) => {
                     console.log(array-value);
-                    return (condition ) //like array-value > 50;  //it will return the index of that element 
+                    return (condition ) //like array-value > 50;  //it will return the index of that element
                 })
 
-Note : if no array element satisfy the condition it will return the -1
+Note : if no array element satisfy the condition it will return the -1 
 
 
 //...........................//
@@ -265,11 +265,11 @@ Note1: Very IMP it is not mandatory that we have to pass the all three parameter
 
 map()  method:
           it is also the higher order function
-          if we want to perform the same opration for each and every array element then we use map() method
-          it will return one array 
-          it will perform the opearation and it will add the array elements in new array and return that array 
+          if we want to perform the same operation for each and every array element then we use map() method
+          it will return one array
+          it will perform the opearation and it will add the array elements in new array and return that array
 
-        Syntax : 
+        Syntax :
                                   //used arrow function as the parameter
                 ArrayName.map((array-value , array-index , orignal-array ) => {
                     console.log(array-value);
@@ -283,20 +283,160 @@ Note : if we want to perform the opearation for each and evey array element like
 
 
 
-some() or every() 
-          both are the higher order function 
-          here also we have to pass the condition 
-          it will return the boolean 
-          both ar ethe non static 
+some() or every()
+          both are the higher order function
+          here also we have to pass the condition
+          it will return the boolean
+          both are the non static
 
           some():
-                  it will return true if the any one element satisfied the codition else it will return false 
-                  once the condition is satisfy it will not check for thr further elements 
+                  it will return true if the any one element satisfied the codition else it will return false
+                  once the condition is satisfy it will not check for thr further elements
 
           every():
-                   it will return true if the each and every element satisfied the codition else it will return false 
+                   it will return true if the each and every element satisfied the codition else it will return false
 
 
 I have to go through 
-reduce() 
-reduceRight() method
+reduce()  method:
+        if you want to add the array elements then we will use this 
+        it is also the higher order method
+        it is also the non static method 
+        it will take one call back function as an argument
+        it will reduce the array and return the single value
+        it will itearate from left to right
+        default value of the accumalater will be 0 
+        if we want to pass the initial value for the accumalater then at the second-argument pass it then it will go inside the Accumalater-value
+        
+        
+        Syntax :
+                                  //used arrow function as the parameter
+                ArrayName.reduce((Accumalater-value , Current-value) => {
+
+                        return Accumalater-value + Current-value;
+                } , second-argument)
+
+
+
+
+reduceRight()  method:
+        it will itearate from right to left
+        all other is same to the reduce() method only 
+
+
+
+forEach() method:
+|           it is also the higher order function
+            it is the inbuilt method in javascript
+            and it is used to iterate over the array
+            it is used to iterate over the array
+
+
+        Syntax :
+                                  //used arrow function as the parameter
+                ArrayName.forEach((array-value , array-index , orignal-array ) => {
+                    console.log(array-value);
+
+                });
+
+Note Imp : diff between map() and forEach();
+
+map() = it will return the array
+forEach() = it will return the void (hence it will return undefined)
+
+
+
+//.............................................///
+
+5 ways to itearate over the array
+            1) normal for loop
+            2) for in loop
+            3) for of loop
+            4) map();
+            5) forEach();
+
+2) for in loop : 
+            used to iterate the index of the array  
+            (identifier , in , ArrayName);
+
+    
+    Syntax:
+            for(identifier , in , ArrayName){
+                //here we can access the only index of the element
+                console.log(index);
+            }
+
+
+
+
+
+3) for of loop
+            used to itearate over the values present inside the array 
+
+    Syntax:
+            for(identifier , of , ArrayName){
+                //here we can access the only array element
+                console.log(value);
+            }
+
+//.............................//
+
+
+indexOf() method:;
+        it will return t he particular index position of the particular array element 
+        it will only take the one parameter  that is array element that we want to find index of that element 
+        it will return -1 if array element is not present 
+
+
+    Syntax:
+            ArrayName.indexOf((mandatory argument) array-element , (optional-argument) that specify which index I should Start for searching that element);
+
+
+lastIndexOf() method:;
+            it will take the only one argument 
+            that is the search the value array element
+            and it will search till the last indexOf the array 
+            it will return -1 if array element is not present 
+
+    Syntax:
+            ArrayName.lastIndexOf( array-element );
+
+
+
+fill() method:;
+            if we want to fill the same value for all the array element then we will use fill()
+            it will take three arguments (value , start-index , last-index ) ; //it will not consider the last index 
+        it is not mandatory to pass the values for the all array elements 
+
+    Syntax:
+            ArrayName.fill(value , start-index , last-index );
+
+
+
+include() method:
+        it will return the boolean value 
+        if the value is present in the array it will return the true or it will return the false 
+
+
+
+Conat():
+        it is used to merge two or more arrays 
+        it will not affect the orignal array 
+
+
+
+    Syntax:
+            let a = ArrayName.concat(arrays names how much we want to concatinate  );
+
+
+
+
+
+
+///......................remaining .......................//
+
+
+
+sort()
+
+flat()

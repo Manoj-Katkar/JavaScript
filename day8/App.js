@@ -148,9 +148,33 @@ console.log(filterRes)
 
 
 
+// !reduce(); method:
+
+let arre = [1 , ,2 ,3 , 4 ,5 ];
+
+let res = ar.reduce((acc , cv) => {
+    console.log(acc);
+    return acc+cv;
+})
+console.log(arre);
+
+let res2 = ar.reduceRight((acc , cv) => {
+    console.log(cv);
+    return acc+cv;
+})
+
+
+console.log(res2);
+
+let arr = ["javascript" , "java" , "node" , "react" , "express" , "dart"];
 
 
 
+
+let res3 = arr.forEach(function(a , b , c){
+    console.log(a);
+    
+})
 
 
 
