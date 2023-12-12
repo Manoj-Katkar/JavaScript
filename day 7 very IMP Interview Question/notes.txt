@@ -263,7 +263,7 @@ Note1: Very IMP it is not mandatory that we have to pass the all three parameter
 
 
 
-map()  method:
+map() method:
           it is also the higher order function
           if we want to perform the same operation for each and every array element then we use map() method
           it will return one array
@@ -298,10 +298,9 @@ some() or every()
 
 
 I have to go through 
-reduce()  method:
-        if you want to add the array elements then we will use this 
-        it is also the higher order method
-        it is also the non static method 
+reduce() method:
+	it is also the higher order method
+        if you want to (add the all array elements) then we will use this method
         it will take one call back function as an argument
         it will reduce the array and return the single value
         it will itearate from left to right
@@ -326,11 +325,9 @@ reduceRight()  method:
 
 
 forEach() method:
+	    it is used to iterate over the array
 |           it is also the higher order function
             it is the inbuilt method in javascript
-            and it is used to iterate over the array
-            it is used to iterate over the array
-
 
         Syntax :
                                   //used arrow function as the parameter
@@ -383,7 +380,7 @@ forEach() = it will return the void (hence it will return undefined)
 
 
 indexOf() method:;
-        it will return t he particular index position of the particular array element 
+        it will return the particular index position of the particular array element 
         it will only take the one parameter  that is array element that we want to find index of that element 
         it will return -1 if array element is not present 
 
@@ -406,7 +403,6 @@ lastIndexOf() method:;
 fill() method:;
             if we want to fill the same value for all the array element then we will use fill()
             it will take three arguments (value , start-index , last-index ) ; //it will not consider the last index 
-        it is not mandatory to pass the values for the all array elements 
 
     Syntax:
             ArrayName.fill(value , start-index , last-index );
