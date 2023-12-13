@@ -433,6 +433,86 @@ Conat():
 
 
 
-sort()
+sort() method:
+        it is used to sort the array in Acending or Decending Order 
+        by default the sort method will sort the array in Acending order 
+        for string it compare the ASCII value of the each word first character and acording to that it will sort the array
+        it will make the changes in the orignal Array  
+        BY deafult the numbers array element it will treat as the string  and with the first character ASCII value it will sort the array 
+        it will take one function as an argument that is Cmparater function
+        that function will return negativeValue / positive value / zero value 
+        and that function will take two parameters 
 
-flat()
+
+reverse() method:
+                it is used to reverse the Array
+                it will affect the orignal Array
+
+
+flat() method:
+        it is used to convert the muti-dimensional array to single dimensional array 
+        it is advance Topic most we will not use it 
+        3 dimensional will convert into 2 dimensional array 
+        2 dimensional will get converted to the 1 dimensional
+
+But I want to convert the mutidimensional array to single dimension array 
+                then pass the ArrayName.flat(3);   //it will convert the 4 dimensional array to the single dimensional array   
+
+
+join() method:
+
+
+
+
+// ....................................//
+
+String method 
+slice() method : same as the array 
+
+
+
+spilit() method : 
+        based on the sepearator it will convert the String into Array 
+        it will take the one argument
+        that argument is separator 
+        for each time separator will be differant
+        it will search for the separator in the String then on that basis it will convert the string to Array
+
+
+SubString() method :
+        it will only take the positive value as an argument
+        all it is similar to the slice method
+        give the continous part of the String
+
+SubStr() method :
+        it wil take the two argument
+        (start-index , length-of-string-that I want to extract )
+
+
+
+replace() method:
+        it is used to replace the particular sub-string in the orignal String
+        it wil take the two argument (search-value , replace-value)
+        it will not modify the orignal String it will return the new String
+
+
+replaceAll() method:
+                it will change the all the occurence of the search value of the matching String 
+
+
+trim() method:
+        it is used to remove the white space at both the side of the String
+
+
+trimStart() method: remove the space from the starting
+
+trimEnd() method: remove the space from the ending
+
+
+indexOf() method: we have to pass the character in the form of the String
+
+
+toString() method:
+                it is used to convert the any other datatype in the String DataType
+
+concat() method: it will merge the two or more String
