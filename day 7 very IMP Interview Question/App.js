@@ -46,3 +46,28 @@ let p = 500;
 console.log(p);
 
 
+// !Date : 14/12/23
+
+let str = "Hello World";
+console.log(str.length);
+console.log(str.charAt(7));
+console.log(str.charCodeAt(4));
+
+
+const str1 = "welcome";
+const convertToAr = str1.split("");
+console.log(convertToAr);
+
+const reverseAr = convertToAr.reverse();
+console.log(reverseAr);
+
+const JoinAr = reverseAr.join("");
+console.log(JoinAr);
+
+
+// ~reverse the string
+
+console.log(str1.split("").reverse().join(""));
+
+
+

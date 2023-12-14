@@ -165,16 +165,16 @@ pop() method :
             it will return the deleted array element
 
 
-shift() method : 
-            it will only remove the only one element 
-            it will remove the array element from the beginning 
-            and it will return the beginning deleted element 
+shift() method :
+            it will only remove the only one element
+            it will remove the array element from the beginning
+            and it will return the beginning deleted element
 
 
 slice() method:
         it will  extract the part of the array and return the new extracted elements in the form of the Array 
-        it will take the two arguments 
-        it will not modify the orignal Array 
+        it will take the two arguments
+        it will not modify the orignal Array
         it will return array hence we have to store that in the one variable then we can print that part of the Array 
         if we are passing only one argument then fom that index it will return the all array elements in the form of the Array 
         we can also pass the negative values as an argument then it will consider from the last index from the orignal Array .
@@ -460,6 +460,7 @@ But I want to convert the mutidimensional array to single dimension array
 
 
 join() method:
+        it is used to convert the array into String 
 
 
 
@@ -472,9 +473,9 @@ slice() method : same as the array
 
 
 spilit() method : 
-        based on the sepearator it will convert the String into Array 
+        based on the sepearator it will convert the String into Array
         it will take the one argument
-        that argument is separator 
+        that argument is separator
         for each time separator will be differant
         it will search for the separator in the String then on that basis it will convert the string to Array
 
@@ -516,3 +517,46 @@ toString() method:
                 it is used to convert the any other datatype in the String DataType
 
 concat() method: it will merge the two or more String
+
+charAt()
+
+
+charCodeAt()
+        it will return the ASCII value of that Character at particular index
+
+
+join() method
+                when we want to convert the Array to the String then we will use join method()
+
+Note : we can use the method chainning to save the line of the code
+
+
+//......................................................................................................//
+
+
+
+
+Object in javascript:
+                key is the unique identifier
+                keys should not be repeated
+                each and every key : value , will be sepearated by comma
+                keys will be stored internally in the form of String
+
+
+                Two ways we can add the keys in the object
+                        1)using dot(.);
+                        2)using square-bracket (["key-name"] = value )
+                        inside the object use colun to add the value
+                        outside the object use = to assign the value to the keys
+
+Note : 
+
+primitive data types = immutable in javascript (it will save the values for differnt different object address)
+non primitive data type  = mutable (here the values will get stored in the same object address )
+
+        in javascript primitive data types reinitailzation of the value will get store in the differant object hence it will throw error 
+        in case of the array and object it will not throw thw error 
+
+ways to create the object :
+                        1)litearal way
+                        2)
