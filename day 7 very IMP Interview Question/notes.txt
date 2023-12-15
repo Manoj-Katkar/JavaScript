@@ -40,7 +40,7 @@ Note : all the methods are the childs of the window  object (prompt() , document
 this Keyword: 
     if you declare it globally then it will refer to the Window Object 
     so we can access the global scope varaible in the local scope using 
-    Syntax : 
+    Syntax :
             this.globalVariableName
  
 //.........................................................//
@@ -546,17 +546,89 @@ Object in javascript:
                 Two ways we can add the keys in the object
                         1)using dot(.);
                         2)using square-bracket (["key-name"] = value )
-                        inside the object use colun to add the value
+                        inside the object use column to add the value
                         outside the object use = to assign the value to the keys
 
-Note : 
+Note :
 
 primitive data types = immutable in javascript (it will save the values for differnt different object address)
 non primitive data type  = mutable (here the values will get stored in the same object address )
 
-        in javascript primitive data types reinitailzation of the value will get store in the differant object hence it will throw error 
-        in case of the array and object it will not throw thw error 
+        in javascript primitive data types re-initailzation of the value will get store in the differant object hence it will throw error
+        in case of the array and object it will not throw the error
 
 ways to create the object :
                         1)litearal way
-                        2)
+                        2)with the help of the class
+                        3)constructor function
+                        4)using object constructor
+
+
+class :
+        it is the bluprint in javascript to create the object
+        we can create the multiple objects with the help of one class
+        if we have the same keys for the multiple objects then create the one class and then create the N no of the objects using that single class
+
+
+constructor:
+        we have to declare the constructor using the constructor Keyword
+        each and every class should have constructor
+        it is used for thr initailzation values for thr object
+
+3)constructor function
+                only with the help of the named function we can able to define the constructor function
+
+
+4)using object constructor:
+                object is object in javascript
+
+
+
+this Keyword:
+        if we use the use strict then it will return thn undefined
+        if we will not use the use strict then it will refer to the window object
+        but inside the arrow function it will refer to the parent scope this value if parent is in global then it will refer to the window object
+        but if the parent in referance  id undefined then it will return the undefined
+
+
+//.................................About the Mock.......................//
+
+Note : 
+        1)what are the specification of the javascript ?
+        2)what is the diff between var , let and const ?
+        3)what are keywords in Js
+        what are the diff types of scope in Js
+        what is the advantage of using the arrow function
+        what is the window object in js 
+        this keyword in js ? for globally , use strict
+        what is the advaange of the immediate invoke function
+        what is closure
+        what is lexical scoping or scope chainning
+        what is the advantage os using use strict 
+        range for number datatype 
+        advantage of using template leterals 
+        explain GEC 
+        what is the nested function in javascript
+        what is higher order function and call back function
+        what is typecasting and explain implict and explicit casting 
+        what is variable hosting ans function hosting in js 
+        how Many ways we can able to  itearate the array in js 
+        what is teh diff between map and for each method 
+        diff between slice splice and split method in js 
+        how many ways we can able to creatge the object in jsvascript 
+        diff between reduce and reduceRight method in js
+        diff between filter and find method
+        diff between sum and every method 
+        WAP TO reverse THE String WITHOUT using reverse method()
+        WAP to filter the array elements WITHOUT using filter method
+        WAP to find the fibonacci series of the number 
+        WAP to check whether it is prime number or not 
+        WAP to merge the Array WITHOUT using concat method 
+        diff betwenn substr , subString , and Slice method
+        how to itearate the String in javascript
+        how to convert the string  using 
+        with the help of the reduceRight how to reverse the String 
+        what is javascript Engine ? 
+        how to run the javascript code on server side ?
+        what is type coersion ?
+

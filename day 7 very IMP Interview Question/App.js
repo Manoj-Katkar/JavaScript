@@ -69,5 +69,82 @@ console.log(JoinAr);
 
 console.log(str1.split("").reverse().join(""));
 
+// !date :15/12/23
+
+let v = 100;
+
+// &object creation using the class
+
+class Student{
+    //!create the constructor 
+    constructor(name , id , percentage){
+        this.name = name;
+        this.id = id;
+        this.percentage = percentage;
+
+    }
+}
+
+let s1 = new Student("sachin" , 100 , 98);
+let s2 = new Student("dhoni" , 7 , 100);
+
+console.log(s1.name);
+console.log(s2, percentage);
+
+
+s2.skills = ["js" , "java"];
+
+console.log(s2);
+
+// !constructor function
+
+function Employee(name , id , designation){
+    this.eName = name;
+    this.eId = id;
+    this.eDesignation = designation;
+}
+
+let e1 = new Employee("virat",150,"manager");
+console.log(e1);
+
+// & by invoking the Object Constructor
+
+let obj1 = new Object({name:"sashi" , id :457});
+obj1.name = "sashi";
+obj1.id = 457;
+
+console.log(obj1);
+
+
+// "use strict";
+
+a = 100;
+console.log(a);
+
+function demo(a , b , b){
+    console.log(a+b+b);
+}
+demo(10,20,30);
+
+let arguments = 100;
+console.log(arguments);
+
+
+// !This keyword in javaScript:
+
+console.log(this === window);
+
+function demo(){
+    console.log(this);
+    let ar =()=>{
+        console.log(this);
+    }
+    ar();
+}
+
+demo();
+
+
+
 
 
