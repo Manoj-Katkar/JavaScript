@@ -593,42 +593,161 @@ this Keyword:
 
 //.................................About the Mock.......................//
 
-Note : 
+Note :
         1)what are the specification of the javascript ?
         2)what is the diff between var , let and const ?
         3)what are keywords in Js
         what are the diff types of scope in Js
         what is the advantage of using the arrow function
-        what is the window object in js 
+        what is the window object in js
         this keyword in js ? for globally , use strict
         what is the advaange of the immediate invoke function
         what is closure
         what is lexical scoping or scope chainning
-        what is the advantage os using use strict 
-        range for number datatype 
-        advantage of using template leterals 
-        explain GEC 
+        what is the advantage os using use strict
+        range for number datatype
+        advantage of using template leterals
+        explain GEC
         what is the nested function in javascript
         what is higher order function and call back function
-        what is typecasting and explain implict and explicit casting 
-        what is variable hosting ans function hosting in js 
-        how Many ways we can able to  itearate the array in js 
-        what is teh diff between map and for each method 
-        diff between slice splice and split method in js 
-        how many ways we can able to creatge the object in jsvascript 
+        what is typecasting and explain implict and explicit casting
+        what is variable hosting ans function hosting in js
+        how Many ways we can able to  itearate the array in js
+        what is teh diff between map and for each method
+        diff between slice splice and split method in js
+        how many ways we can able to creatge the object in jsvascript
         diff between reduce and reduceRight method in js
         diff between filter and find method
-        diff between sum and every method 
+        diff between sum and every method
         WAP TO reverse THE String WITHOUT using reverse method()
         WAP to filter the array elements WITHOUT using filter method
-        WAP to find the fibonacci series of the number 
-        WAP to check whether it is prime number or not 
-        WAP to merge the Array WITHOUT using concat method 
+        WAP to find the fibonacci series of the number
+        WAP to check whether it is prime number or not
+        WAP to merge the Array WITHOUT using concat method
         diff betwenn substr , subString , and Slice method
         how to itearate the String in javascript
-        how to convert the string  using 
-        with the help of the reduceRight how to reverse the String 
-        what is javascript Engine ? 
+        how to convert the string  using
+        with the help of the reduceRight how to reverse the String
+        what is javascript Engine ?
         how to run the javascript code on server side ?
         what is type coersion ?
 
+//...................................................................................//
+
+Object methods :  (inbuilt method)
+
+1)object.freeze() : 
+                it takes one argument 
+                we have to pass the object referance as the parameter
+                it is the static method because we call this method with object name 
+                we have to call this method with the Object
+                you cannot add , update or delete the key and value when you use freez() method
+
+                i) to check whether the object is freez or not
+                
+                use isFrozen() method:
+                                this is also the static method because we call this method with object name 
+                                it will return true when the object is in frozen otherwise it will return the false
+
+
+
+
+
+
+
+
+
+2)object.Seal() : 
+                we can only able to update the values 
+                we canoot able to add or remove the value 
+                it will only take the one argument that is the object referance 
+
+                to check whether it is Seal or not 
+                        i)isSealed(): 
+                                        it will  return true if it is in seal stage 
+                                        else it will return false
+
+differant between above two  method
+                write it in the book
+
+
+2)object.keys() : 
+                it is also the static method 
+                take the referance as the parameter
+                it will return the  all the "keys" in the form of the array 
+
+
+3)object.values() : 
+                it is also the static method 
+                take the referance as the parameter
+                it will return the  all the "values" in the form of the array 
+
+
+3)object.entries() : 
+                it is also the static method 
+                take the referance as the parameter
+                it will return the  all the "keys" and "values" in the form of the array 
+
+
+//............................................//
+
+Date() Object:
+        it is the inbuilt object in js 
+        we can create it by invoking the date constructor
+        it will take the Current date and time from the system along with the year 
+
+        we have some inbuilt methods in date object 
+                i)each and every methods are non static methods 
+
+                1) getDate() : it will return the number that is the Current date 
+                1) getFullYear() : it will return the number that is the Current Year 
+                1) getDay() : it will return the number that is the Current day in the form of 
+                        0 = sunday
+                        1=monday 
+                        like that from no (0 to 6) it will return number 
+
+                1) getHours() : it will return the number that is the Current hour in 24hours watch
+
+                1) getMonth() : it will return the number that is the Current date 
+                        0 = jan 
+                        1 = feb 
+                        it will return the values between the 0 to 11 
+
+                1) getSeconds() : it will return the number that is the Seconds using the local time  
+
+                1) getMiliSeconds() : it will return the number that is the MiliSeconds using the local time
+
+
+......................If I want to set the time date day .............................//
+
+All Ar ethe non satatic methods
+
+        1)setFullYear()
+                        it is used to set the year for the date object using the local time
+                        it will take the three parameters
+                        (year , month , date) 2nd and 3rd argument is optional
+
+
+
+
+//............................................Math Object.......................................//
+
+it is the inbuilt object 
+we canoot create the object of the Math by invoking the constructor
+all the methods that are present in the Math that are the static method
+
+
+        1)Math.round(): 
+                        it will round the value and return the rounded value 
+                        it will take one argument that is one number 
+                        it will convert decimal to the nearest integer
+
+
+        1)Math.ceil():
+                        it will convert to the nearest highest integer
+
+        1)Math.floor():
+                        it will convert to the nearest lowest integer
+
+        1)Math.trunc():
+                        it will remove that decimal part and return the integer value only  
