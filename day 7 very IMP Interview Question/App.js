@@ -130,7 +130,7 @@ let arguments = 100;
 console.log(arguments);
 
 
-// !This keyword in javaScript:
+// !This keyword in javsaScript:
 
 console.log(this === window);
 

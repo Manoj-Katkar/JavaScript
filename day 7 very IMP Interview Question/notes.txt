@@ -743,11 +743,86 @@ all the methods that are present in the Math that are the static method
                         it will convert decimal to the nearest integer
 
 
-        1)Math.ceil():
+        2)Math.ceil():
                         it will convert to the nearest highest integer
 
-        1)Math.floor():
+        3)Math.floor():
                         it will convert to the nearest lowest integer
 
-        1)Math.trunc():
-                        it will remove that decimal part and return the integer value only  
+        3)Math.trunc():
+                        it will remove that decimal part and return the integer value only
+
+////////////////////////////........................................./////////////////////////
+
+        4)Math.random():
+                        it will used to generate the randam number in between  0 to 1 
+
+                        i) if we want the some number between some number 
+                                Math.random() * (highest-value - lowest-value)+lowest-value
+
+        4)Math.max():
+                        it will take the multiple arguments and each and every argument will return the number data 
+                        it will take the only numbeR DataType AS THE Arguments
+                        for the numeric string it will take the argument and implicit type casting will take place 
+                        default it will return -infinity 
+
+
+        4)Math.min():
+                        it is same act as the max method but different is t will return the min value 
+                        default value will be +infinity
+
+
+        4)Math.pow():
+                        we can use the two time astrics (**)
+                        and or we can use the pow method
+                        take the two argument
+
+
+        4)Math.cbrt():
+                        it will use to find the cuberoot of the any number
+                        it will return then cube root of the particular number
+
+        4)Math.sqrt():
+                        it will return the square root of the particular number
+
+//.......................................................................................................//                     syncronus & A-synchronus 
+                         syncronus = line by line 
+                         A-synchronus 
+SetTimeOut();
+SetInterval();
+                both are the function
+                both are the direct child of the window object 
+                so we can directlly able to access the properties and  methods
+                two methods are used to convert the syncronus code to the A-synchronus code 
+
+
+
+SetTimeOut(call-back-function , time-delay);
+
+        it will execute the code only one time after the deal
+        it will take two or more argument
+        1st argument = call back function
+        2nd argument = time delay in MiliSeconds
+        3rd , 4th and remaining ar ethe optional
+        1sec = 1000mili-Seconds
+        it will return on number
+
+        we have to write the our A-synchronus code inside the call back function
+
+
+SetInterval();
+        but it will execute the code again and again after the delay
+        it will return on number
+
+
+window.clearInterval();
+            it is used to stop setInterval
+            the number that is reurn by the SetInterval that we have to pass as an argument
+
+
+
+window.clearTimeout();
+            is used to stop setTimeout function
+
+
+
