@@ -825,4 +825,82 @@ window.clearTimeout();
             is used to stop setTimeout function
 
 
+//...............................DOM........................//
+                document object model 
+                DOM is the tree like structure 
+                document refers to the entire web page 
+                it is a tree like structure 
+                when we run the html code 
+                each and evry html element we call it as node 
+                Entire HTML is get store inside the document object 
+                if we add the any html element then it will create again the new document that is tree like structure
+                HTML is the root element
 
+what we can perform with the DOM :
+                        we can give the functinality to the web page
+                        we can also target the html element using the javascript
+                        we can give the css also
+                        we can able to create the new html element also
+                        we can able to perform the DOM events also
+                        we can also able to pass the content to the html tag like for paragraph 
+
+
+There are the two ways we can able to target the html element
+                        1)direct access
+                                        h1.style.background = "yellow"
+
+
+
+
+                        2)by using inbuilt methods: 
+                                        when we have the multiple element then we will use the inbuilt methods only 
+
+        document.body.children : will return the child in the o based array like objec but it is not a object
+
+
+        document.body : it will return the only body
+
+        1)with  the help of the index we can access the html tag
+
+
+          
+          In DOM we have 5 inbuilt methods
+                        1)document.getElementById();
+                        2)document.getElementByClassName();
+                        3)
+                        4)
+                        5)
+
+
+ 1)document.getElementById();
+                        we target the html tag by their unique id
+                        it will take only one argument
+                        that is the id
+                        and we have to pass that id in the form of the String
+                        then based on that id we can able to target that element
+                        it will return the single value
+                        it will target the first satisfied id element
+                        if the html element is not present then it will return null
+
+
+
+
+2)document.getElementByClassName();
+                        it is used to target the html element with the class Name
+                        it will always return the HTML Collection
+
+                        if no element matching the class name then it will return the empty html Collection
+
+HTML Collection =(it is an object)
+                i)it is the array like object where all the html tags are stored in the form of the index data structuret
+
+                ii) we can able to itearate the HTML Collection
+
+
+TO convert the html Collection to the array 
+
+                using the Array.from() method: 
+                               is the any Collection is the index based and we are able to itearate over it then yes we can able to convert the that into the array 
+
+
+                               
