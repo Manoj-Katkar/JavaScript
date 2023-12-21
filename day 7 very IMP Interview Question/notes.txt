@@ -867,9 +867,10 @@ There are the two ways we can able to target the html element
           In DOM we have 5 inbuilt methods
                         1)document.getElementById();
                         2)document.getElementByClassName();
-                        3)
-                        4)
+                        3)document.getElementsByTagName();
+                        4)document.querySelector();
                         5)
+                        6)document.createElement();
 
 
  1)document.getElementById();
@@ -891,8 +892,8 @@ There are the two ways we can able to target the html element
 
                         if no element matching the class name then it will return the empty html Collection
 
-HTML Collection =(it is an object)
-                i)it is the array like object where all the html tags are stored in the form of the index data structuret
+HTML Collection = (it is an object)
+                i)it is the array like object where all the html tags are stored in the form of the index data structure
 
                 ii) we can able to itearate the HTML Collection
 
@@ -902,5 +903,85 @@ TO convert the html Collection to the array
                 using the Array.from() method: 
                                is the any Collection is the index based and we are able to itearate over it then yes we can able to convert the that into the array 
 
+//........................................................................................//
+                      
+3)document.getElementsByTagName();
+                                it is used to target the html element by tag name 
+                                it will also take the one argument that is tag name like h1 etc 
+                                it will return the html Collection on based on the tagname that is how much tags are there with that particular tag 
 
-                               
+
+               note : if I want to target the all the html element then use 
+                                i) document.getElementsByTagName("*");   //by passing the astrics
+
+
+4)document.querySelector();
+                                it will always return single html element
+                                it is used to target only the single html element
+                                based on the argument that you passed
+                                we have to pass the only one argument
+                                it will always return the first satisfied html element
+                                with the help id , class-name , using tagname  we can able to target the html element in querySelector method
+                                for differant argument
+                                1)id = #id-value
+                                2)class = .class-name
+                                3)tagname = directlly-tagname 
+
+note : we can able to set the class name to any tag by using the 
+                        1)tag.className = "name-of the class";
+                        2)tag.id = "id-name";
+                        3)tag.innerText = "pass the content in the form of the String"; //use to pass the content to the any tag 
+                                or we can use 
+                                ii)tag.innerHTML()
+
+
+5)document.querySelectorALL();
+                        it will also take id-value , clasname', and tagname as the parameter
+                                for differant argument
+                                1)id = #id-value
+                                2)class = .class-name
+                                3)tagname = directlly-tagname 
+
+                        it will target the all the html element will satisfied the clasname or id or tagname
+                        but we can pass the only one parameter out of three that we have
+                        it will return  the node list
+                        it will return  the HTMl element who are have the particular parameter
+                        it is the array like 0 based  index based data structure
+                        node-list is one object in javascript
+                        for the node list we can able to use forEach() method
+
+
+6)document.createElement();
+                        it will use to create the new Html element
+                        it will take the only oe argument
+                        that is the tagname for which html you want to create
+
+
+                        i)appendChild(tagname):
+                                        it will take the one argument that is the tagname
+                                        it will only make only one HTML element as the child
+                                        when we want to make the new element as the child in the html parent then use this method
+
+                         i)append(tagname):
+                                        it will take the one argument that is the tagname
+                                        it will  make more than  one HTML element as the child
+
+
+1)tag.innerText ()
+                it will consider the element as also the text
+                but innerHTML will treat element as the element only
+
+
+ii)tag.innerHTML()
+                here we can pass the content also and tag also
+                here tag is also treated as the html element
+                recommended to pass the value in the form of the pactics
+
+
+//...........................Attribute Methods ..........................................//
+
+1)SetAttribute():
+                it is non static method
+                take the two argument
+                first-argument = Attribute_name    // Attribute_name should be in the form of the String
+                second-argument = Attribute_value  //Attribute_value should be in the form of the String

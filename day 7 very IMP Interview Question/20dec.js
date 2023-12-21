@@ -1,14 +1,12 @@
 console.log(document);
-console.dir(document);
 
-let a = console.log(document.body.children);
-console.log(a);
+console.dir(document);
 
 let b = document.body.children;
 console.log(Array.isArray(b));
 console.log(b);
 
-let h1 = b[0];
-let link = document.get
 
-console.log(a[0]);
+let h1 = b[0];
+//^ now I can give the css 
+h1.sty
