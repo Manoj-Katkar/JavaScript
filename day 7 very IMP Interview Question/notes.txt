@@ -869,7 +869,7 @@ There are the two ways we can able to target the html element
                         2)document.getElementByClassName();
                         3)document.getElementsByTagName();
                         4)document.querySelector();
-                        5)
+                        5)document.querySelectorALL();
                         6)document.createElement();
 
 
@@ -940,7 +940,7 @@ note : we can able to set the class name to any tag by using the
                                 for differant argument
                                 1)id = #id-value
                                 2)class = .class-name
-                                3)tagname = directlly-tagname 
+                                3)tagname = directlly-tagname
 
                         it will target the all the html element will satisfied the clasname or id or tagname
                         but we can pass the only one parameter out of three that we have
@@ -963,7 +963,7 @@ note : we can able to set the class name to any tag by using the
                                         when we want to make the new element as the child in the html parent then use this method
 
                          i)append(tagname):
-                                        it will take the one argument that is the tagname
+                                        it will take the multiple argument that is the tagname
                                         it will  make more than  one HTML element as the child
 
 
@@ -983,5 +983,131 @@ ii)tag.innerHTML()
 1)SetAttribute():
                 it is non static method
                 take the two argument
+                it is used to set the attribute name and the attribute value for the html element
                 first-argument = Attribute_name    // Attribute_name should be in the form of the String
                 second-argument = Attribute_value  //Attribute_value should be in the form of the String
+
+
+2)getAttribute():
+                it is non static method
+                take the one argument
+                we have to pass the Attribute name as the argument
+                it is used to get the attribute value from the html element
+                and it will return the attribute value
+                pass the attribute in the String format only
+                it will return string or null
+                if the attribute is present then it will return the attribute value
+                if the attribute is not present then it will return null
+
+
+
+
+
+3)removeAttribute():
+                it is non static method
+                it is used to remove the particular attribute if the particular is present in html element
+                it will also take the attribute name as the argument
+                return type is void
+
+
+4)hasAttribute():
+                it will return boolean value
+                we have to pass the attribute name as the parameter
+                true = if the attribute is present
+                false = if the attribute is not present
+
+////////...........................DOM Event......................................//
+       
+        Defination:
+                Events are the Actions which are perform on the html element
+                when we trigger the event then only the function will get execute hence DOM events are A synchronus
+
+                1)mouse-event
+                2)keybord - event
+                3)click event
+                4)mouse-over
+                5)mouse-out
+                6)submit event
+                7)changing the input field
+
+
+  click event:
+                there are two ways
+                                1)onclick property:
+                                                it will always take the one function as the value
+                                                we can able to give the one click event
+                                                when we trigger the event then only the function will get execute hence DOM events are A synchronus
+                                                it will take the one argument that is the event object
+
+
+
+Question 1) What is even object in js ?
+                it holds the information about the particular event
+                and it will return the object
+                and inside that object it will be having the information about the particular Event
+
+
+
+
+                               
+                               
+                               
+                                2)addEventListner() method:
+                                                        we can able to perform the dom events with addEventListner()
+                                                        it will take three argument
+                                                        first two are the mandatory
+                                                argument 1 = eventName or evenType //in the form String
+                                                argument 2 = one function //it will get executed when the event will get trigger
+                                                that function will take the one parameter that is the event object
+                                                argument 3 = boolean value(true/false) bydefault it will be false
+
+                                    Note : Mostlly we will use the addEventListner() method
+                   Syntax:
+                        addEventListner('click' , ()=>{
+                                your logic that you want to perform
+                        } , boolean-value)
+
+
+ClassList:
+                it is the one object in js
+                we add , remove , delete the className
+                it will not override with the previous value it will append it as the new value
+
+    Some methods that are present in the ClassList
+                                All will take the argument as the clasname only
+                        1)add();
+                        2)remove();
+                        3)contains();
+                        4)toggle();
+
+
+
+  1)add();
+                it is used to add the clasname in the html element
+                we can pass the multiple argument  that is the clasname
+                it will append the all clasname values in the html element
+                return type of the add method is void
+
+
+  1)remove();
+                it is used to remove the clasname if it is present in the html element
+                we can pass the multiple argument  that is the clasname that we want to remove
+                it will remove the clasname the all clasname values in the html element
+                return type of the add method is void
+
+
+  1)contains();
+                it will return the boolean value
+                if the clasname is present then = true
+                else it will retrun the false
+
+
+
+
+  1)toggle();   (very IMP)
+  
+                it is used to add the clasname also
+                and remove the clasname also at the same time
+                it will always return the boolean value
+                if it adds the clasname then it will return true
+                if it remove the clasname then it will return false
