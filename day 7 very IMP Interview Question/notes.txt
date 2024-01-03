@@ -588,7 +588,7 @@ this Keyword:
         if we use the use strict then it will return thn undefined
         if we will not use the use strict then it will refer to the window object
         but inside the arrow function it will refer to the parent scope this value if parent is in global then it will refer to the window object
-        but if the parent in referance  id undefined then it will return the undefined
+        but if the parent in referance id undefined then it will return the undefined
 
 
 //.................................About the Mock.......................//
@@ -1049,9 +1049,7 @@ Question 1) What is even object in js ?
 
 
 
-                               
-                               
-                               
+
                                 2)addEventListner() method:
                                                         we can able to perform the dom events with addEventListner()
                                                         it will take three argument
@@ -1105,9 +1103,67 @@ ClassList:
 
 
   1)toggle();   (very IMP)
-  
+
                 it is used to add the clasname also
                 and remove the clasname also at the same time
                 it will always return the boolean value
                 if it adds the clasname then it will return true
                 if it remove the clasname then it will return false
+
+IMp note : inside the function this keyword refer to the button element
+                or we can use the
+                e.target.innerHTML = button_name
+
+
+
+//...........................rest-parameter and Spread operator.....................//
+inside the addEventListner this keyword refer to the = targeted html element if it is the anonymus function
+and for arrow function = window object
+inside the object this will refer to the Current object
+
+
+IN object we can able to define the one function in 4 ways:
+
+
+                Non primmitive datatype :
+                                  if we compare the non primitive data types then it will get compare by their address
+
+
+
+
+
+
+//...................................date : 03/01/2024...........................................................................//
+//...........................rest-parameter and Spread operator.....................//
+
+rest-parameter:
+                it will always returns the array
+                it will store the all the remaining values in the form of the array
+                rest parameter must be in the last in the parameter list
+                if we are defining in the function as the parameter then it will be reset-parameter
+
+
+                Syntax: (a,b,......z)    //..... is the store the rest parameter in the form of the Array
+
+
+Spread operator:
+                it is used to Spread the values
+                we can able to Spread the value which are itearable
+                it will  returns the array , or String
+
+               1) why we use Spread operator
+                                we will use for object and array
+
+
+Object destructuring :   (very imp)
+                we can able to give the unique identifier to the values present inside the object
+                we can able to copy the orignal object by Object destructuring
+
+                Syntax:
+                                let {} = object_name which we want to destructure;
+
+
+        How to merge the two objects 
+                                we can do it via the Object destructuring
+
+                              
