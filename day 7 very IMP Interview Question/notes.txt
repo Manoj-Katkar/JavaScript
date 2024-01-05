@@ -1166,4 +1166,27 @@ Object destructuring :   (very imp)
         How to merge the two objects 
                                 we can do it via the Object destructuring
 
-                              
+
+
+//.........................date 05/01/2024.............................................//
+
+Submit Event :
+                submit event will get trigger when we submit the form
+                and type also should be submit mandatory it is
+                it is only for the form tag
+                page will get reload that is the default behaviour of the submit button
+
+
+    if we want to prevent the event from the default behaviour use following Method :
+
+                .preventDefault();                 (V-V-Very IMP)
+
+if the radio button is selectged we have one method
+
+                checked   = if the radio button is selected it will return true else it will return false
+
+getElementByName 
+                it is used to target more than one input field
+                and it will return node list
+
+
